@@ -1,12 +1,14 @@
 # Pluralsight GitHub Learn
 
-Adding and deleting files using GitOperations
+File Operations using Git commands
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Git Operations performed to clone the repo, add, delete, update the file remote and locally. 
+Used git clone, git pull, git push, git fetch so far..
 
 ## Getting Started
 
 ### Dependencies
-No Dependency
+* Install Git
+* Using MacOS
