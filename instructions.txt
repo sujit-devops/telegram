@@ -1,4 +1,8 @@
 adding new file
 new instructions adding
 
+<<<<<<< HEAD
 feature-330 fixed
+=======
+feature-329 updating
+>>>>>>> main
