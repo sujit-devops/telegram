@@ -4,8 +4,16 @@ jobs:
   check-netlify-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      # Get code from repo
+      - name: Checkout code
+        uses: actions/checkout@v1
+      # Install NodeJS
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      # Run npm install and build on our code
+      - run: npm install
+      - run: npm run build --if-present
+      # Deploy to Netlify using our dev secrets
       - run: npm install netlify-cli -g
-      - run: npm netlify -v
-
